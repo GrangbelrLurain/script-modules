@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "declarationDir": "./dist",
+    "declarationMap": true,
+    "noEmit": false,
+    "paths": {
+      "@frontend-schema-compiler/core": ["./src"]
+    }
+  },
+  "include": ["src/**/*.ts", "../generate-doc/src/generateDoc.ts"]
+}

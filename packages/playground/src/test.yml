@@ -1,0 +1,22 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+type: object
+properties:
+  name:
+    type: string
+  age:
+    type: number
+  email:
+    type: string
+    format: email
+  phone:
+    type: string
+    format: phone
+  address:
+    type: string
+  createdAt:
+    type: string
+    format: date-time
+  updatedAt:
+    type: string
+    format: date-time

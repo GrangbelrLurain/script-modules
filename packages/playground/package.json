@@ -1,0 +1,16 @@
+{
+  "name": "@script-modules/playground",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "playground": "ts-node ./src/test.ts"
+  },
+  "dependencies": {
+    "@script-modules/generate-typescript-schema": "workspace:*"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "packageManager": "pnpm@10.6.2"
+}

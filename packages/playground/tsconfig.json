@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "paths": {
+      "@script-modules/generate-typescript-schema": ["../generate-typescript-schema/dist"]
+    }
+  },
+  "include": ["src/**/*.ts"]
+}

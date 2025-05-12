@@ -1,0 +1,40 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: CoreCompiler
+type: object
+description: >-
+  @group The common configuration for yaml compiler
+  @see https://github.com/ajv-validator/ajv-formats
+properties:
+  type:
+    type: string
+    description: The type of the compiler
+    enum:
+      - ajv
+      - type
+  format:
+    type: string
+    description: The format of the source
+    enum:
+      - text
+      - file
+
+required:
+  - type
+  - format
+
+oneOf:
+  - properties:
+      format:
+        const: "file"
+      src:
+        type: string
+        description: The source file to compiler
+    required: ["format", "src"]
+  - properties:
+      format:
+        const: "text"
+      schema:
+        type: string
+        description: The schema to compiler
+    required: ["format", "schema"]
