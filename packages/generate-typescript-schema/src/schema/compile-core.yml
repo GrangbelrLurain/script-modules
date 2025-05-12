@@ -4,7 +4,6 @@ title: CoreCompiler
 type: object
 description: >-
   @group The common configuration for yaml compiler
-  @see https://github.com/ajv-validator/ajv-formats
 properties:
   type:
     type: string
